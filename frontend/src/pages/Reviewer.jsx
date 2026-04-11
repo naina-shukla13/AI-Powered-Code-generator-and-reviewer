@@ -100,7 +100,7 @@ useEffect(() => {
     setLoading(true); setReviewText(''); setDone(false)
     const token = localStorage.getItem('token')
     try {
-      const response = await fetch('http://localhost:5001/api/reviews/stream', {
+      const response = await fetch('https://ai-powered-code-generator-and-reviewer-production.up.railway.app/api/reviews/stream', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${token}` },
         body: JSON.stringify({ code, language, title: title || `${language} review` })
@@ -129,7 +129,7 @@ useEffect(() => {
     setLoading(true); setGeneratedCode(''); setDone(false)
     const token = localStorage.getItem('token')
     try {
-      const response = await fetch('http://localhost:5001/api/reviews/generate', {
+      const response = await fetch('https://ai-powered-code-generator-and-reviewer-production.up.railway.app/api/reviews/generate', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${token}` },
         body: JSON.stringify({ prompt, language })
