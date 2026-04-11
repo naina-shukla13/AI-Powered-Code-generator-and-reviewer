@@ -42,22 +42,6 @@ A full-stack AI tool that reviews your code for bugs, security vulnerabilities, 
 
 ---
 
-## 📸 Screenshots
-
-### Landing Page
-> Hero section with animated code demo showing live vulnerability detection
-
-### Code Reviewer (Side-by-side)
-> Left: code editor with line numbers | Right: AI review with color-coded severity badges
-
-### Code Generator
-> Prompt input with quick-prompt suggestions | Generated code streamed in real time
-
-### Dashboard
-> Review history with language breakdown chart and severity distribution analytics
-
----
-
 ## 🚀 Getting Started Locally
 
 ### Prerequisites
